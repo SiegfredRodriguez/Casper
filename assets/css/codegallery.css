@@ -49,3 +49,26 @@ body {
 ol.toc-list {
     margin: 0;
 }
+
+.post-full-image img {
+    max-width: 365px;
+    width: 100%;
+    height: auto;
+}
+
+html:not(.no-dark) .post-full-image {
+    background-color: #e4eaed;
+}
+
+.post-content {
+    width: 90%;
+}
+
+.post-full-content hr {
+    margin: 1em 0;
+    border-top-color: red !important;
+}
+
+.post-full-content hr::after {
+    background-color: #e4eaed !important;
+}

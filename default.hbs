@@ -151,11 +151,14 @@
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.2/tocbot.min.js" integrity="sha512-8u1QblAcGUuhEv26YgTYO3+OtPL7l37qiYoPQtahVTaiLn/H3Z/K16TOXJ3U7PDYBiJWCWKM0a+ELUDGDgED2Q==" crossorigin="anonymous"></script>
+
     <script>
         tocbot.init({
             tocSelector: '.toc',
             contentSelector: '.post-content',
-            hasInnerContainers: true
+            hasInnerContainers: true,
+            headingsOffset: 250,
+            scrollSmoothOffset: -70
         });
     </script>
 
