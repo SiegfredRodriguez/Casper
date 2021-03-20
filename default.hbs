@@ -142,7 +142,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" integrity="sha512-NtjyXKZIx9kS+j/9XE2o253aFEK3J6oXma6SuPdk6dXFuTysZWxi8r6KyWKVHYoJZvPydwDT1XfgEFUcC6aqZA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-bWzyGaP/f19RLeYGN6ZhDgvkS7GM0Fq23lOI1/PB3lV6I775RIDzXLxCGR4iiDGzeMsQ3lncuXUQMFP7qO9lIQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-br8H6OngKoLht57WKRU5jz3Vr0vF+Tw4G6yhNN2F3dSDheq4JiaasROPJB1wy7PxPk7kV/+5AIbmoZLxxx7Zow==" crossorigin="anonymous"></script>
-    <script>
+    <script type="text/javascript">
         window.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('pre[class*=language-]').
             forEach((node) => {
@@ -152,7 +152,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.12.2/tocbot.min.js" integrity="sha512-8u1QblAcGUuhEv26YgTYO3+OtPL7l37qiYoPQtahVTaiLn/H3Z/K16TOXJ3U7PDYBiJWCWKM0a+ELUDGDgED2Q==" crossorigin="anonymous"></script>
 
-    <script>
+    <script type="text/javascript">
         tocbot.init({
             tocSelector: '.toc',
             contentSelector: '.post-content',
@@ -162,6 +162,11 @@
         });
     </script>
 
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $(".post-content a").attr("target","moredetail");
+        });
+    </script>
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}

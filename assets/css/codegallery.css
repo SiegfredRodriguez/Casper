@@ -17,16 +17,59 @@ div.note-block-green {
     margin: 0 0 1.5em;
 }
 
+div.card-info {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-color: #2E7D32;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    font: inherit;
+    font-size: 1.7rem;
+    margin: 0 0 1.5em;
+}
+
+div.card-warning {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    border-radius: 5px;
+    background-color: #C62828;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    font: inherit;
+    font-size: 1.7rem;
+    margin: 0 0 1.5em;
+}
+
+@media only screen and (max-width: 750px) {
+    .toc-container {
+        display: none;
+    }
+
+    .post-content {
+        width: 100% !important;
+    }
+
+    pre[class*="language-"] {
+        padding: 3rem 10rem 3rem 5rem;
+        width: 90vw !important;
+        font-size: 0.7em;
+        margin-bottom: 45px;
+    }
+}
+
 .post-content h2,
 .post-content h3 {
     outline: none;
 }
+
 body {
     overflow: visible;
 }
+
 .post-full-content {
     display: grid;
-    grid-template-columns: 1fr 0.2fr;
+    grid-template-columns: auto 0.2fr;
     padding: 0 0 6vw;
     margin: 0;
 }
